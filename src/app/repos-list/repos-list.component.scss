@@ -1,0 +1,36 @@
+img{
+  filter: drop-shadow(5px 5px 10px #555);
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    border-radius: 50%; /* Make it a circle */
+    margin-left: 30%;
+}
+.format{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+  font-weight: bold;
+}
+.description{
+font-size: large;
+font-weight: bold;
+}
+mat-card-header{
+  font-size: xx-large;
+  color: #428BCA;
+}
+.card{
+  border: 1px solid black;
+}
+.repositories-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.repository-card {
+  flex: 1 1 calc(50% - 20px);
+}
+
+
+
+
