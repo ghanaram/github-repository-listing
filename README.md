@@ -1,28 +1,5 @@
-# Fyle Frontend Challenge
-
-## Who is this for?
-
-This challenge is meant for candidates who wish to intern at Fyle and work with our engineering team. The candidate should be able to commit to at least 6 months of dedicated time for internship.
-
-## Why work at Fyle?
-
-Fyle is a fast-growing Expense Management SaaS product. We are ~40 strong engineering team at the moment. 
-
-We are an extremely transparent organization. Check out our [careers page](https://careers.fylehq.com) that will give you a glimpse of what it is like to work at Fyle. Also, check out our Glassdoor reviews [here](https://www.glassdoor.co.in/Reviews/Fyle-Reviews-E1723235.htm). You can read stories from our teammates [here](https://stories.fylehq.com).
-
-## Challenge outline
-
-This challenge involves implementing application using github api. 
-
-The services that you need to use are already implemented - check out ApiService.
-
-You can see details of this challenge [here](https://fyleuniverse.notion.site/fyleuniverse/Fyle-Frontend-development-challenge-cb5085e5e0864e769e7b98c694400aaa)
-
-__Note__ - This challenge is in angular. We work on angular frameworks & after you join we expect the same from you. Hence it is required to complete this assignement in angular itself.
-
-## What happens next?
-
-You will hear back within 48 hours from us via email.
+# fyle-internship-challenge-23/GitHub Repositories Listing
+This Angular application allows users to search for GitHub repositories by username.
 
 ## Installation
 
@@ -36,6 +13,33 @@ You will hear back within 48 hours from us via email.
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+
+# Running Tests
+* To run the unit tests, use the following command:
+* ng test
+* This command will execute the unit tests using Karma and Jasmine.
+# Test Suites
+* The application includes test suites for the UserInputComponent and GithubService to ensure the functionality of the search feature and API interactions.
+# Test Coverage
+1. The application aims for 100% code coverage, with test cases covering various scenarios.
+
+## Viewing Code Coverage
+1. To generate and view the code coverage report, run:
+   ng test --code-coverage
+After running this command, you can find the coverage report in the coverage/ directory. Open the index.html file inside that directory in a web browser to view the detailed code coverage information.
+
+# Code Coverage Details
+The coverage report includes detailed information on which lines of code are covered by tests and which are not.
+
+# Additional Notes
+1. Feel free to add more test cases based on your application's features and requirements.
+2. Ensure that you have Node.js and npm installed before running the commands.
+3. If you encounter any issues or have questions, refer to the GitHub Issues section for support.
+
+#  Contribution Guidelines
+If you would like to contribute to this project, please follow the contribution guidelines for details on submitting pull requests and reporting issues.
+
+Make sure to replace "your-username" and "fyle-internship-challenge-23" with your actual GitHub username and repository name. Additionally, consider adding a CONTRIBUTING.md file with detailed contribution guidelines if applicable. Adjust the content based on your specific application and testing needs.
 
 ## Further help
 
