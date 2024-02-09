@@ -7,6 +7,8 @@
         <div class="flex-1 space-y-4 py-1">
           <div class="h-4 bg-gray-300 rounded"></div>
           <div class="h-4 bg-gray-300 rounded w-5/6"></div>
+          <div class="h-4 bg-gray-300 rounded w-5/6"></div>
+          <div class="h-4 bg-gray-300 rounded w-5/6"></div>
         </div>
       </div>
     </div>
@@ -18,13 +20,13 @@
     <img [src]="user.avatar_url" alt="Rounded Image" class="rounded-circle img-fluid"  />
     <br>
     <div class="row">
-     <a [href]="user.html_url" target="_blank"  class="description">{{user.html_url}}</a>
+     <i class='fa fa-link'><a [href]="user.html_url" target="_blank"  class="description">{{user.html_url}}</a></i>
     </div>
   </div>
   <div class="col mb 4 format">
     <h3 style="font-size: x-large; font-weight: bolder;">{{user.name}}</h3>
     <p class="description">{{user.bio}}</p>
-    <i class="fa fa-map-marker" *ngIf="user.location"></i>&nbsp;<span>{{user.location}}</span>
+    <i class="fa fa-map-marker" *ngIf="user.location"></i>&nbsp;&nbsp;<span>{{user.location}}</span>
     <br>
     <br>
     <p class="description" *ngIf="user.twitter_username">Twitter:<a href="http://twitter.com/">{{user.twitter_username}}</a></p>
@@ -52,13 +54,18 @@
       </div>
       </mat-card-content>
     </mat-card>
-    <br>
+
   </div>
 </div>
+<mat-paginator
+    [pageSizeOptions]="pageSizeOptions"
+    [pageSize]="pageSize"
+    [length]="totalRepositories"
+    [pageIndex]="currentPage - 1"
+    (page)="onPageChange($event)"
+  >
+  </mat-paginator>
 </div>
-
-
-
 <div *ngIf="repositories.length === 0">
   <p>No repositories found for the given username.</p>
 </div>

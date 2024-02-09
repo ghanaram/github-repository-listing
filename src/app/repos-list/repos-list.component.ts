@@ -11,6 +11,10 @@ export class ReposListComponent {
   user: any;
   repositories: any[] = [];
   isLoading: boolean = false;
+  pageSizeOptions: number[] = [10, 25, 50, 100];
+  pageSize: number = 10;
+  currentPage: number = 1;
+  totalRepositories: number = 0;
 
   constructor(private apiService: ApiService) {}
 
@@ -35,9 +39,13 @@ export class ReposListComponent {
 
   private fetchRepositories(): void {
     this.isLoading = true;
-    this.apiService.getUserRepos(this.username).subscribe(
+    const page = this.currentPage;
+    const perPage = this.pageSize;
+
+    this.apiService.getUserRepos(this.username, page, perPage).subscribe(
       (repositories) => {
         this.repositories = repositories;
+        this.totalRepositories = this.repositories.length;
         this.isLoading = false;
       },
       (error) => {
@@ -46,6 +54,18 @@ export class ReposListComponent {
         // Handle error, e.g., display an error message to the user
       }
     );
+  }
+
+  onPageSizeChange(event: any): void {
+    this.pageSize = event.target.value;
+    this.currentPage = 1; // Reset to the first page when page size changes
+    this.fetchRepositories();
+  }
+
+  onPageChange(event: any): void {
+    this.currentPage = event.pageIndex + 1;
+    this.pageSize = event.pageSize;
+    this.fetchRepositories();
   }
 
 
