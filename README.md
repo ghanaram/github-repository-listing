@@ -1,4 +1,4 @@
-# fyle-internship-challenge-23/GitHub Repositories Listing
+# GitHub Repositories Listing
 This Angular application allows users to search for GitHub repositories by username.
 
 ## Installation
