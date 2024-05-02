@@ -18,10 +18,6 @@ Run `ng serve` for a dev server. Navigate to http://localhost:4200/. The app wil
 * To run the unit tests, use the following command:
 * ng test
 * This command will execute the unit tests using Karma and Jasmine.
-# Test Suites
-* The application includes test suites for the UserInputComponent and GithubService to ensure the functionality of the search feature and API interactions.
-# Test Coverage
-1. The application aims for 100% code coverage, with test cases covering various scenarios.
 
 ## Viewing Code Coverage
 1. To generate and view the code coverage report, run:
