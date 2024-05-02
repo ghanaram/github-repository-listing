@@ -14,19 +14,6 @@ This Angular application allows users to search for GitHub repositories by usern
 
 Run `ng serve` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
-# Running Tests
-* To run the unit tests, use the following command:
-* ng test
-* This command will execute the unit tests using Karma and Jasmine.
-
-## Viewing Code Coverage
-1. To generate and view the code coverage report, run:
-   ng test --code-coverage
-After running this command, you can find the coverage report in the coverage/ directory. Open the index.html file inside that directory in a web browser to view the detailed code coverage information.
-
-# Code Coverage Details
-The coverage report includes detailed information on which lines of code are covered by tests and which are not.
-
 # Additional Notes
 1. Feel free to add more test cases based on your application's features and requirements.
 2. Ensure that you have Node.js and npm installed before running the commands.
