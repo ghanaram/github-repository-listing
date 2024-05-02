@@ -13,7 +13,7 @@ This Angular application allows users to search for GitHub repositories by usern
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
-live[gitHub-reporistry-listing](https://master--githubrepositorylisting.netlify.app/)
+live: [gitHub-reporistry-listing](https://master--githubrepositorylisting.netlify.app/)
 
 # Additional Notes
 1. Feel free to add more test cases based on your application's features and requirements.
